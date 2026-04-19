@@ -1,0 +1,178 @@
+.page-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 20px;
+}
+
+.login-card {
+  width: min(100%, 404px);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(191, 204, 231, 0.72);
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(120, 136, 179, 0.14);
+  padding: 22px 22px 24px;
+  backdrop-filter: blur(14px);
+}
+
+.brand-mark {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #2f6df6 0%, #2052e8 100%);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 18px;
+  box-shadow: 0 10px 24px rgba(37, 91, 235, 0.24);
+}
+
+.cube-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.hero-copy {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.hero-copy p {
+  margin: 10px 0 0;
+  font-size: 1rem;
+  color: #7280a7;
+}
+
+.login-form {
+  display: grid;
+  gap: 12px;
+}
+
+.field {
+  display: grid;
+  gap: 7px;
+}
+
+.field span {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: #101828;
+}
+
+.field input {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background: #f2f4f8;
+  padding: 13px 14px;
+  color: #344054;
+  outline: none;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+}
+
+.field input::placeholder {
+  color: #8a94b2;
+}
+
+.field input:focus {
+  border-color: #2f6df6;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(47, 109, 246, 0.12);
+}
+
+.sign-in-button {
+  margin-top: 2px;
+  border: 0;
+  border-radius: 9px;
+  padding: 14px 16px;
+  background: linear-gradient(180deg, #09071c 0%, #050515 100%);
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, opacity 0.16s ease;
+}
+
+.sign-in-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(5, 5, 21, 0.18);
+}
+
+.sign-in-button:active {
+  transform: translateY(0);
+  opacity: 0.96;
+}
+
+.login-error {
+  margin: 0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: rgba(239, 68, 68, 0.08);
+  color: #b42318;
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
+
+.divider {
+  height: 1px;
+  background: #e8ecf5;
+  margin: 22px 0;
+}
+
+.demo-panel h2 {
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.credentials-box {
+  background: #f4f6fb;
+  border-radius: 10px;
+  padding: 14px 14px 12px;
+}
+
+.credentials-box p {
+  margin: 0 0 7px;
+  font-size: 0.86rem;
+  line-height: 1.35;
+  color: #1f2937;
+}
+
+.credentials-box p:last-child {
+  margin-bottom: 0;
+}
+
+.credentials-box strong {
+  font-weight: 800;
+}
+
+@media (max-width: 480px) {
+  .page-shell {
+    padding: 18px 14px;
+  }
+
+  .login-card {
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+
+  .hero-copy h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-copy p {
+    font-size: 0.94rem;
+  }
+
+  .credentials-box p {
+    font-size: 0.82rem;
+  }
+}
